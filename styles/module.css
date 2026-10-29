@@ -41,17 +41,6 @@
   flex-shrink: 0;
 }
 
-/* Icon-only buttons: make them square at the chosen size */
-.chat-message .message-content button:has(> :is(i, img, svg, dnd5e-icon, .dnd5e-icon):only-child),
-.chat-message .message-content a.button:has(> :is(i, img, svg, dnd5e-icon, .dnd5e-icon):only-child) {
-  width: var(--ccs-button-size) !important;
-  height: var(--ccs-button-size) !important;
-  padding: 0 !important;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Icons inside those buttons */
 .chat-message .message-content :is(button, a.button, [role="button"]) i,
 .chat-message .chat-card button i {
@@ -74,6 +63,11 @@
   min-height: var(--ccs-button-size) !important;
   height: auto !important;
   flex: 0 0 auto !important;
+}
+
+/* Text labels on buttons follow the chat font size */
+.chat-message .ccs-btn:not(.ccs-icon-btn) {
+  font-size: var(--ccs-font-size) !important;
 }
 
 .chat-message .ccs-icon-btn {
