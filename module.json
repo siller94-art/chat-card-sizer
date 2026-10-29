@@ -2,7 +2,7 @@
   "id": "chat-card-sizer",
   "title": "Chat Card Sizer",
   "description": "Adjust the font size of chat cards and the size of the action (attack/damage/etc.) button icons. Per-player client settings.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14",
@@ -40,5 +40,5 @@
   ],
   "url": "https://github.com/siller94-art/chat-card-sizer",
   "manifest": "https://raw.githubusercontent.com/siller94-art/chat-card-sizer/main/module.json",
-  "download": "https://github.com/siller94-art/chat-card-sizer/releases/download/v1.1.0/chat-card-sizer.zip"
+  "download": "https://github.com/siller94-art/chat-card-sizer/releases/download/v1.1.1/chat-card-sizer.zip"
 }

@@ -26,33 +26,44 @@
   font-size: calc(var(--ccs-font-size) * 0.85);
 }
 
-/* ---------- Action buttons (attack / damage / etc.) ---------- */
-.chat-message .dnd5e2.chat-card .card-footer button,
-.chat-message .dnd5e2.chat-card .card-buttons button,
-.chat-message .dnd5e2.chat-card button[data-action],
-.chat-message .chat-card .card-buttons button,
-.chat-message .chat-card .card-footer button {
-  min-width: var(--ccs-button-size);
-  min-height: var(--ccs-button-size);
-  height: var(--ccs-button-size);
+/* ---------- Action buttons (attack / damage / etc.) ----------
+   Covers every button in the message body, including the small
+   icon-only buttons dnd5e puts beside the pills (apply healing,
+   undo/history, etc.). !important beats the system's fixed sizes. */
+.chat-message .message-content button,
+.chat-message .message-content a.button,
+.chat-message .message-content [role="button"],
+.chat-message .dnd5e2.chat-card button,
+.chat-message .chat-card button {
+  min-width: var(--ccs-button-size) !important;
+  min-height: var(--ccs-button-size) !important;
+  height: auto !important;
+  flex-shrink: 0;
 }
 
-.chat-message .dnd5e2.chat-card .card-footer button i,
-.chat-message .dnd5e2.chat-card .card-buttons button i,
-.chat-message .dnd5e2.chat-card button[data-action] i,
-.chat-message .dnd5e2.chat-card button[data-action] .dnd5e-icon,
-.chat-message .chat-card .card-buttons button i,
-.chat-message .chat-card .card-footer button i {
-  font-size: var(--ccs-icon-size);
-  width: var(--ccs-icon-size);
-  height: var(--ccs-icon-size);
-  line-height: var(--ccs-icon-size);
+/* Icon-only buttons: make them square at the chosen size */
+.chat-message .message-content button:has(> :is(i, img, svg, dnd5e-icon, .dnd5e-icon):only-child),
+.chat-message .message-content a.button:has(> :is(i, img, svg, dnd5e-icon, .dnd5e-icon):only-child) {
+  width: var(--ccs-button-size) !important;
+  height: var(--ccs-button-size) !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
-.chat-message .dnd5e2.chat-card .card-footer button img,
-.chat-message .dnd5e2.chat-card .card-footer button svg,
-.chat-message .dnd5e2.chat-card .card-buttons button img,
-.chat-message .dnd5e2.chat-card .card-buttons button svg {
-  width: var(--ccs-icon-size);
-  height: var(--ccs-icon-size);
+/* Icons inside those buttons */
+.chat-message .message-content :is(button, a.button, [role="button"]) i,
+.chat-message .chat-card button i {
+  font-size: var(--ccs-icon-size) !important;
+  line-height: 1 !important;
+}
+
+.chat-message .message-content :is(button, a.button, [role="button"]) :is(img, svg, dnd5e-icon, .dnd5e-icon),
+.chat-message .chat-card button :is(img, svg, dnd5e-icon, .dnd5e-icon) {
+  --icon-size: var(--ccs-icon-size);
+  width: var(--ccs-icon-size) !important;
+  height: var(--ccs-icon-size) !important;
+  max-width: none !important;
+  max-height: none !important;
 }
