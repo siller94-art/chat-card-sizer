@@ -1,0 +1,10 @@
+{
+  "CCS.FontSize.Name": "Chat Card Font Size (px)",
+  "CCS.FontSize.Hint": "Base font size for chat message content. Foundry's default is about 14.",
+  "CCS.ButtonSize.Name": "Action Button Size (px)",
+  "CCS.ButtonSize.Hint": "Width/height of the roll buttons (attack, damage, etc.) on chat cards.",
+  "CCS.IconSize.Name": "Action Icon Size (px)",
+  "CCS.IconSize.Hint": "Size of the icons inside those buttons.",
+  "CCS.Reset.Name": "Reset to defaults",
+  "CCS.Reset.Hint": "Tick and save to restore all three values to their defaults."
+}

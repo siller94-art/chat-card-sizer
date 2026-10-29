@@ -1,0 +1,58 @@
+:root {
+  --ccs-font-size: 14px;
+  --ccs-button-size: 32px;
+  --ccs-icon-size: 16px;
+}
+
+/* ---------- Font size ---------- */
+.chat-message .message-content,
+.chat-message .message-content .dnd5e2.chat-card,
+.chat-message .message-content .description,
+.chat-message .message-content .card-content,
+.chat-message .message-content p,
+.chat-message .message-content li,
+.chat-message .message-content blockquote {
+  font-size: var(--ccs-font-size);
+}
+
+.chat-message .message-content .dnd5e2.chat-card .card-header .title,
+.chat-message .message-content .dnd5e2.chat-card .card-header .name-stacked .title {
+  font-size: calc(var(--ccs-font-size) * 1.15);
+}
+
+.chat-message .message-content .dnd5e2.chat-card .subtitle,
+.chat-message .message-content .dnd5e2.chat-card .pills .pill,
+.chat-message .message-content .dnd5e2.chat-card .pills .pill * {
+  font-size: calc(var(--ccs-font-size) * 0.85);
+}
+
+/* ---------- Action buttons (attack / damage / etc.) ---------- */
+.chat-message .dnd5e2.chat-card .card-footer button,
+.chat-message .dnd5e2.chat-card .card-buttons button,
+.chat-message .dnd5e2.chat-card button[data-action],
+.chat-message .chat-card .card-buttons button,
+.chat-message .chat-card .card-footer button {
+  min-width: var(--ccs-button-size);
+  min-height: var(--ccs-button-size);
+  height: var(--ccs-button-size);
+}
+
+.chat-message .dnd5e2.chat-card .card-footer button i,
+.chat-message .dnd5e2.chat-card .card-buttons button i,
+.chat-message .dnd5e2.chat-card button[data-action] i,
+.chat-message .dnd5e2.chat-card button[data-action] .dnd5e-icon,
+.chat-message .chat-card .card-buttons button i,
+.chat-message .chat-card .card-footer button i {
+  font-size: var(--ccs-icon-size);
+  width: var(--ccs-icon-size);
+  height: var(--ccs-icon-size);
+  line-height: var(--ccs-icon-size);
+}
+
+.chat-message .dnd5e2.chat-card .card-footer button img,
+.chat-message .dnd5e2.chat-card .card-footer button svg,
+.chat-message .dnd5e2.chat-card .card-buttons button img,
+.chat-message .dnd5e2.chat-card .card-buttons button svg {
+  width: var(--ccs-icon-size);
+  height: var(--ccs-icon-size);
+}
