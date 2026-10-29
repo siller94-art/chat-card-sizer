@@ -40,5 +40,5 @@
   ],
   "url": "https://github.com/siller94-art/chat-card-sizer",
   "manifest": "https://raw.githubusercontent.com/siller94-art/chat-card-sizer/main/module.json",
-  "download": "https://github.com/siller94-art/chat-card-sizer/releases/download/v1.1.1/chat-card-sizer.zip"
+  "download": "https://github.com/siller94-art/chat-card-sizer/raw/main/dist/chat-card-sizer.zip"
 }
