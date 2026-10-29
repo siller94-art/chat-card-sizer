@@ -2,7 +2,7 @@
   "id": "chat-card-sizer",
   "title": "Chat Card Sizer",
   "description": "Adjust the font size of chat cards and the size of the action (attack/damage/etc.) button icons. Per-player client settings.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": {
     "minimum": "13",
     "verified": "14",

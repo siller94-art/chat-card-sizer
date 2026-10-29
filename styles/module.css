@@ -67,3 +67,42 @@
   max-width: none !important;
   max-height: none !important;
 }
+
+/* ---------- Tagged controls (added by scripts/main.js) ---------- */
+.chat-message .ccs-btn {
+  min-width: var(--ccs-button-size) !important;
+  min-height: var(--ccs-button-size) !important;
+  height: auto !important;
+  flex: 0 0 auto !important;
+}
+
+.chat-message .ccs-icon-btn {
+  width: var(--ccs-button-size) !important;
+  height: var(--ccs-button-size) !important;
+  max-width: none !important;
+  max-height: none !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: var(--ccs-icon-size) !important;
+  line-height: 1 !important;
+  --icon-size: var(--ccs-icon-size);
+}
+
+.chat-message .ccs-btn i,
+.chat-message .ccs-btn .fa-solid,
+.chat-message .ccs-btn .fas {
+  font-size: var(--ccs-icon-size) !important;
+  line-height: 1 !important;
+}
+
+.chat-message .ccs-btn :is(img, svg, dnd5e-icon, .dnd5e-icon) {
+  display: inline-block !important;
+  width: var(--ccs-icon-size) !important;
+  height: var(--ccs-icon-size) !important;
+  max-width: none !important;
+  max-height: none !important;
+  flex: 0 0 auto !important;
+  --icon-size: var(--ccs-icon-size);
+}
