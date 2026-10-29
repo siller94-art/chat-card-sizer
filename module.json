@@ -3,12 +3,42 @@
   "title": "Chat Card Sizer",
   "description": "Adjust the font size of chat cards and the size of the action (attack/damage/etc.) button icons. Per-player client settings.",
   "version": "1.1.0",
-  "compatibility": { "minimum": "13", "verified": "14", "maximum": "14" },
-  "authors": [{ "name": "You" }],
-  "relationships": {
-    "systems": [{ "id": "dnd5e", "type": "system", "compatibility": { "minimum": "5.0.0" } }]
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
   },
-  "esmodules": ["scripts/main.js"],
-  "styles": ["styles/module.css"],
-  "languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }]
+  "authors": [
+    {
+      "name": "siller94-art",
+      "url": "https://github.com/siller94-art"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/siller94-art/chat-card-sizer",
+  "manifest": "https://raw.githubusercontent.com/siller94-art/chat-card-sizer/main/module.json",
+  "download": "https://github.com/siller94-art/chat-card-sizer/releases/download/v1.1.0/chat-card-sizer.zip"
 }
